@@ -67,6 +67,16 @@ function Hrdashboard() {
         </div>
 
         <ul className="sidebar-nav-links">
+            <li className="sidebar-link-item">
+              <button className="nav-icon-btn" title="Messages">
+                <IconMail />
+              </button>
+            </li>
+            <li className="sidebar-link-item">
+              <button className="nav-icon-btn" title="Notifications">
+                <IconBell />
+              </button>
+            </li>
           <li className="sidebar-link-item">
             <button 
               className={`sidebar-btn ${activeTab === 'overview' ? 'active' : ''}`}
@@ -142,14 +152,7 @@ function Hrdashboard() {
               <input type="text" placeholder="Search..." />
             </div>
 
-            <div className="navbar-actions">
-              <button className="nav-icon-btn" title="Messages">
-                <IconMail />
-              </button>
-              <button className="nav-icon-btn" title="Notifications">
-                <IconBell />
-              </button>
-            </div>
+
 
             {/* Profile Section */}
             <div className="navbar-profile-trigger" onClick={() => setProfileMenuOpen(!profileMenuOpen)}>
@@ -171,7 +174,7 @@ function Hrdashboard() {
         </header>
 
         {/* Dashboard Content */}
-        <div className="dashboard-content-scrollable">
+        <div className="dashboard-content-scrollable hr-content">
           {/* INSERT YOUR BACKEND DATA / VIEWS HERE */}
           
         </div>

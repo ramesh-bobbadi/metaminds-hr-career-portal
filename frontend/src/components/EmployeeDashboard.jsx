@@ -64,6 +64,17 @@ function EmployeeDashboard() {
         </div>
 
         <ul className="sidebar-nav-links">
+
+          <li className="sidebar-link-item">
+            <div className="sidebar-icon-group">
+              <button className="nav-icon-btn" title="Messages">
+                <IconMail />
+              </button>
+              <button className="nav-icon-btn" title="Notifications">
+                <IconBell />
+              </button>
+            </div>
+          </li>
           <li className="sidebar-link-item">
             <button 
               className={`sidebar-btn ${activeTab === 'overview' ? 'active' : ''}`}
@@ -131,14 +142,7 @@ function EmployeeDashboard() {
               <input type="text" placeholder="Search..." />
             </div>
 
-            <div className="navbar-actions">
-              <button className="nav-icon-btn" title="Inbox">
-                <IconMail />
-              </button>
-              <button className="nav-icon-btn" title="Alerts">
-                <IconBell />
-              </button>
-            </div>
+
 
             {/* Profile Dropdown */}
             <div className="navbar-profile-trigger" onClick={() => setProfileMenuOpen(!profileMenuOpen)}>
@@ -160,7 +164,7 @@ function EmployeeDashboard() {
         </header>
 
         {/* Dashboard Content */}
-        <div className="dashboard-content-scrollable">
+        <div className="dashboard-content-scrollable employee-content">
           {/* INSERT YOUR BACKEND DATA / VIEWS HERE */}
           
         </div>

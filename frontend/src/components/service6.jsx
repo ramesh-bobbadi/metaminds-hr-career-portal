@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
-import devopsImg from '../assets/web&appDev.webp';
+import devopsImg from '../assets/devops.webp';
 import './styles/service2.css';
 
 const features = [
