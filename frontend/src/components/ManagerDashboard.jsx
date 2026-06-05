@@ -73,6 +73,14 @@ function ManagerDashboard() {
             </button>
           </li>
           <li className="sidebar-link-item">
+            <button className="nav-icon-btn" title="Messages">
+              <IconMail />
+            </button>
+            <button className="nav-icon-btn" title="Notifications">
+              <IconBell />
+            </button>
+          </li>
+          <li className="sidebar-link-item">
             <button 
               className={`sidebar-btn ${activeTab === 'team' ? 'active' : ''}`}
               onClick={() => { setActiveTab('team'); setMobileSidebarOpen(false); }}
@@ -131,14 +139,6 @@ function ManagerDashboard() {
               <input type="text" placeholder="Search..." />
             </div>
 
-            <div className="navbar-actions">
-              <button className="nav-icon-btn" title="Team Messages">
-                <IconMail />
-              </button>
-              <button className="nav-icon-btn" title="Alerts">
-                <IconBell />
-              </button>
-            </div>
 
             {/* Profile Dropdown */}
             <div className="navbar-profile-trigger" onClick={() => setProfileMenuOpen(!profileMenuOpen)}>
@@ -160,7 +160,7 @@ function ManagerDashboard() {
         </header>
 
         {/* Dashboard Content */}
-        <div className="dashboard-content-scrollable">
+        <div className="dashboard-content-scrollable manager-content">
           {/* INSERT YOUR BACKEND DATA / VIEWS HERE */}
           
         </div>

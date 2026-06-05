@@ -5,6 +5,9 @@ import Footer from './Footer';
 import cloud from '../assets/cloud.webp';
 import cyber from '../assets/cyber.webp';
 import webAppDev from '../assets/web&appDev.webp';
+import devops from '../assets/devops.webp';
+import analytics from '../assets/dataanalysis.webp';
+import marketing from '../assets/Digitalmarketing.webp';
 import './styles/Services.css';
 
 function Services() {
@@ -470,7 +473,7 @@ function Services() {
             {/* Showcase Card 4: Digital Marketing */}
             <div className="showcase-row reversed">
               <div className="showcase-visual">
-                <img src={webAppDev} alt="Digital Marketing" className="showcase-img" />
+                <img src={marketing} alt="Digital Marketing" className="showcase-img" />
               </div>
               <div className="showcase-info">
                 <span className="showcase-subtitle">Visibility & Growth</span>
@@ -509,14 +512,14 @@ function Services() {
                 </Link>
               </div>
               <div className="showcase-visual">
-                <img src={cyber} alt="Data Analytics & AI" className="showcase-img" />
+                <img src={analytics} alt="Data Analytics & AI" className="showcase-img" />
               </div>
             </div>
 
             {/* Showcase Card 6: DevOps & Automation */}
             <div className="showcase-row reversed">
               <div className="showcase-visual">
-                <img src={cloud} alt="DevOps & Automation" className="showcase-img" />
+                <img src={devops} alt="DevOps & Automation" className="showcase-img" />
               </div>
               <div className="showcase-info">
                 <span className="showcase-subtitle">Speed & Reliability</span>
