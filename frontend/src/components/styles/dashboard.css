@@ -208,7 +208,7 @@
 }
 
 .navbar-title {
-  font-size: 1.35rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   background: linear-gradient(135deg, #ffffff 0%, var(--db-text-muted) 100%);
@@ -325,12 +325,25 @@
   line-height: 1.2;
 }
 
+@media (max-width: 600px) {
+  .profile-name, .profile-role-badge {
+    display: none;
+  }
+}
+
 .profile-role-badge {
   font-size: 0.72rem;
   color: var(--db-gold);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+
+/* Manager Dashboard specific content hide on mobile */
+@media (max-width: 600px) {
+  .manager-content {
+    display: none;
+  }
 }
 
 /* Profile Dropdown Menu */
