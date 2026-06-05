@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../assets/mm logo.png';
 import './styles/dashboard.css';
+import EmployeeOverview from './EmployeeOverview';
+import EmployeeAttendance from './EmployeeAttendance';
+import EmployeeLeave from './EmployeeLeave';
+import EmployeeTasks from './EmployeeTasks';
+import EmployeeSettings from './EmployeeSettings';
 
 function EmployeeDashboard() {
   const navigate = useNavigate();
@@ -165,8 +170,11 @@ function EmployeeDashboard() {
 
         {/* Dashboard Content */}
         <div className="dashboard-content-scrollable employee-content">
-          {/* INSERT YOUR BACKEND DATA / VIEWS HERE */}
-          
+          {activeTab === 'overview' && <EmployeeOverview />}
+          {activeTab === 'attendance' && <EmployeeAttendance />}
+          {activeTab === 'leave' && <EmployeeLeave />}
+          {activeTab === 'tasks' && <EmployeeTasks />}
+          {activeTab === 'settings' && <EmployeeSettings />}
         </div>
       </main>
 

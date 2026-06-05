@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../assets/mm logo.png';
 import './styles/dashboard.css';
+import HrOverview from './Hroverview';
+import HrEmployees from './HrEmployees';
+import HrCandidates from './HrCandidates';
+import HrJobs from './HrJobs';
+import HrLeaveRequests from './HrLeaveRequests';
+import HrSettings from './HrSettings';
 
 function Hrdashboard() {
   const navigate = useNavigate();
@@ -175,8 +181,12 @@ function Hrdashboard() {
 
         {/* Dashboard Content */}
         <div className="dashboard-content-scrollable hr-content">
-          {/* INSERT YOUR BACKEND DATA / VIEWS HERE */}
-          
+          {activeTab === 'overview' && <HrOverview />}
+          {activeTab === 'employees' && <HrEmployees />}
+          {activeTab === 'candidates' && <HrCandidates />}
+          {activeTab === 'jobs' && <HrJobs />}
+          {activeTab === 'leaves' && <HrLeaveRequests />}
+          {activeTab === 'settings' && <HrSettings />}
         </div>
       </main>
 

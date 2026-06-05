@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../assets/mm logo.png';
 import './styles/dashboard.css';
+import ManagerOverview from './ManagerOverview';
+import ManagerTeamMembers from './ManagerTeamMembers';
+import ManagerProjects from './ManagerProjects';
+import ManagerLeaveApprovals from './ManagerLeaveApprovals';
+import ManagerSettings from './ManagerSettings';
 
 function ManagerDashboard() {
   const navigate = useNavigate();
@@ -161,8 +166,11 @@ function ManagerDashboard() {
 
         {/* Dashboard Content */}
         <div className="dashboard-content-scrollable manager-content">
-          {/* INSERT YOUR BACKEND DATA / VIEWS HERE */}
-          
+          {activeTab === 'overview' && <ManagerOverview />}
+          {activeTab === 'team' && <ManagerTeamMembers />}
+          {activeTab === 'projects' && <ManagerProjects />}
+          {activeTab === 'leaves' && <ManagerLeaveApprovals />}
+          {activeTab === 'settings' && <ManagerSettings />}
         </div>
       </main>
 

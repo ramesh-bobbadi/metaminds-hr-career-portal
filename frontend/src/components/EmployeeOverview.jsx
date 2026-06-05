@@ -1,15 +1,15 @@
 import React from 'react';
 
-function HrOverview() {
+function EmployeeOverview() {
   return (
-    <div className="hr-overview-container">
+    <div className="employee-overview-container">
       <h2>Overview</h2>
       <div className="overview-body">
-        <p>Welcome to HR Dashboard Overview</p>
+        <p>Welcome to Employee Dashboard Overview</p>
         {/* Add your overview content here */}
       </div>
     </div>
   );
 }
 
-export default HrOverview;
+export default EmployeeOverview;
