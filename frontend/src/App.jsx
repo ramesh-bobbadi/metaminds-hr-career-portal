@@ -17,6 +17,9 @@ import Services5 from './components/service5'
 import Services6 from './components/service6'
 import GoToTop from './components/GoToTop'
 import LoadingScreen from './components/LoadingScreen'
+import HrDashboard from './components/HrDashboard'
+import EmployeeDashboard from './components/EmployeeDashboard'
+import ManagerDashboard from './components/ManagerDashboard'
 
 function AppContent({ showLoading, setShowLoading }) {
   const [routeLoading, setRouteLoading] = useState(false);
@@ -56,6 +59,9 @@ function AppContent({ showLoading, setShowLoading }) {
         <Route path='/services4' element={<Services4/>}/>
         <Route path='/services5' element={<Services5/>}/>
         <Route path='/services6' element={<Services6/>}/>
+        <Route path='/hrdashboard' element={<HrDashboard/>}/>
+        <Route path='/employeedashboard' element={<EmployeeDashboard/>}/>
+        <Route path='/managerdashboard' element={<ManagerDashboard/>}/>
       </Routes>
       <GoToTop />
     </>
