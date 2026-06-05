@@ -1,0 +1,14 @@
+
+.dash_header{
+    height:80px;
+    background-color:black;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+.asidebar{
+    height: 200px;
+    width: 100px;
+    color: aliceblue;
+    background-color: yellow;
+}
